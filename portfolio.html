@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <a class="logo" href="./index.html" lang="en" aria-label="Логотип сайта WebStudio"
+            >Web<span class="logo-black-color">Studio</span>
+          </a>
+          <ul class="list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="./index.html">Студия</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link active-text-color" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="navigation-item"><a class="navigation-link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="header-list list">
+          <li class="header-items">
+            <a class="header-contact" href="mailto:info@devstudio.com">
+              <svg class="header-icon" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header-items">
+            <a class="header-contact" href="tel:+380961111111">
+              <svg class="header-icon" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="portfolio">
+        <div class="container">
+          <h1 class="portfolio-title visually-hidden">Наши работы</h1>
+          <ul class="portfolio-filter list">
+            <li class="items">
+              <button class="portfolio-btn activ-btn" type="button">Все</button>
+            </li>
+            <li class="items"><button class="portfolio-btn" type="button">Веб-сайты</button></li>
+            <li class="items"><button class="portfolio-btn" type="button">Приложения</button></li>
+            <li class="items"><button class="portfolio-btn" type="button">Дизайн</button></li>
+            <li class="items"><button class="portfolio-btn" type="button">Маркетинг</button></li>
+          </ul>
+          <ul class="portfolio-list list">
+            <li class="portfolio-item">
+              <a class="portfolio-link" href="#">
+                <div class="card-thumb">
+                  <img
+                    src="./images/portfolio/photos-our-portfolio-1.jpg"
+                    alt="Разработка веб-сайта Технокряк"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-thumb-overlay">
+                    <p class="card-thumb-paragraph">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="text">
+                  <h2 class="portfolio-second-title">Технокряк</h2>
+                  <p class="portfolio-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-link" href="#">
+                <div class="scene">
+                  <div class="card">
+                    <img
+                      src="./images/portfolio/photos-our-portfolio-2.jpg"
+                      alt="Разработка дизайна постера"
+                      width="370"
+                      height="294"
+                    />
+                    <div class="card-face card-face-back">
+                      <p>
+                        Не дивіться на Україну, як на землю своїх батьків. Дивіться на неї, як на
+                        землю своїх дітей. І тоді прийдуть зміни…<br /><br />
+                        Святослав Вакарчук
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="text">
+                  <h2 class="portfolio-second-title">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <span class="portfolio-text-flag">
+                    <p class="portfolio-text flag">Дизайн</p>
+                      <svg class="ukraine" width="32" height="16">
+                        <use href="./images/icons.svg#Flag_of_Ukraine"></use>
+                      </svg>
+                  </span>                  
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-link" href="#">
+                <div class="card-thumb">
+                  <img
+                    src="./images/portfolio/photos-our-portfolio-3.jpg"
+                    alt="Создание приложения для ресторана Seafood"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-thumb-overlay">
+                    <p class="card-thumb-paragraph">
+                      Не той українець, у кого батьки українці, а той, у кого діти українці.<br /><br />
+                      Михайло Голтишов
+                    </p>
+                  </div>
+                </div>
+                <div class="text">
+                  <h2 class="portfolio-second-title">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="portfolio-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-link" href="#">
+                <div class="card-thumb">
+                  <img
+                    src="./images/portfolio/photos-our-portfolio-4.jpg"
+                    alt="Маркетинг для проекта Prime"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-thumb-overlay">
+                    <p class="card-thumb-paragraph">
+                      Оті дурні, що кричать "націоналіст!", не розуміють і ніколи не зрозуміють, що
+                      я зумів об'єднати любов до мого народу з любов'ю до всіх народів світу!<br /><br />
+                      Остап Вишня
+                    </p>
+                  </div>
+                </div>
+                <div class="text">
+                  <h2 class="portfolio-second-title">Проект <span lang="en">Prime</span></h2>
+                  <p class="portfolio-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-link" href="#">
+                <div class="card-thumb">
+                  <img
+                    src="./images/portfolio/photos-our-portfolio-5.jpg"
+                    alt="Разработка и запуск приложения Boxes"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-thumb-overlay">
+                    <p class="card-thumb-paragraph">
+                      Ніхто нам не збудує держави, коли ми її самі не збудуємо, і ніхто з нас не
+                      зробить нації, коли ми самі нацією не схочемо бути.<br /><br />
+                      В. Липинський
+                    </p>
+                  </div>
+                </div>
+                <div class="text">
+                  <h2 class="portfolio-second-title">Проект <span lang="en">Boxes</span></h2>
+                  <p class="portfolio-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-link" href="#">
+                <div class="card-thumb">
+                  <img
+                    src="./images/portfolio/photos-our-portfolio-6.jpg"
+                    alt="Проектировка сайта «Inspiration has no Borders»"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-thumb-overlay">
+                    <p class="card-thumb-paragraph">
+                        <pre class="card-thumb-pre">
+                         Для всіх ти мертва і смішна, 
+                         Для всіх ти бідна і нещасна, 
+                         Моя Україно прекрасна, 
+                         Пісень і волі сторона.
+                       </pre>
+                       О. Олесь
+                    </p>
+                  </div>
+                </div>
+                <div class="text">
+                  <h2 class="portfolio-second-title" lang="en">Inspiration has no Borders</h2>
+                  <p class="portfolio-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-link" href="#">
+                <div class="card-thumb">
+                  <img
+                    src="./images/portfolio/photos-our-portfolio-7.jpg"
+                    alt="Разработка дизайна Limited Edition"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-thumb-overlay">
+                    <p class="card-thumb-paragraph">
+                      Бути українцем – це значить бути постійно в стані доказування свого права на існування.<br /><br />
+                      В. Винниченко
+                    </p>
+                  </div>
+                </div>
+                <div class="text">
+                  <h2 class="portfolio-second-title">
+                    Издание <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="portfolio-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-link" href="#">
+                <div class="card-thumb">
+                  <img
+                    src="./images/portfolio/photos-our-portfolio-8.jpg"
+                    alt="Маркетинг для проекта LAB"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-thumb-overlay">
+                    <p class="card-thumb-paragraph">
+                      Ми мусимо навчитися чути себе українцями – не галицькими, не буковинськими українцями, а українцями без офіційних кордонів.<br /><br />
+                      І. Франко
+                    </p>
+                  </div>
+                </div>
+                <div class="text">
+                  <h2 class="portfolio-second-title">Проект <span lang="en">LAB</span></h2>
+                  <p class="portfolio-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-link" href="#">
+                <div class="card-thumb">
+                  <img
+                    src="./images/portfolio/photos-our-portfolio-9.jpg"
+                    alt="Разработка и тестирование приложения Growing Business"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-thumb-overlay">
+                    <p class="card-thumb-paragraph">
+                      «Біда України в тому, що нею керують ті, кому вона не потрібна».<br /><br />
+                      Михайло Грушевський
+                    </p>
+                  </div>
+                </div>
+                <div class="text">
+                  <h2 class="portfolio-second-title" lang="en">Growing Business</h2>
+                  <p class="portfolio-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-address-container">
+          <a class="logo" href="/index.html" lang="en" aria-label="Логотип сайта WebStudio"
+            >Web<span class="logo-white-color">Studio</span></a
+          >
+          <address class="address-footer">
+            <ul class="list">
+              <li class="footer-item">
+                <a
+                  class="footer-address"
+                  href="https://goo.gl/maps/qPdaPdiiLv6fJNoK8"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social-container">
+          <strong class="footer-social-caption">Присоединяйтесь</strong>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a
+                class="footer-social-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                lang="en"
+                aria-label="Instagram"
+              >
+                <svg class="footer-social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer-social-item">
+              <a
+                class="footer-social-link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                lang="en"
+                aria-label="Instagram"
+              >
+                <svg class="footer-social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                class="footer-social-link"
+                href="https://facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                lang="en"
+                aria-label="Instagram"
+              >
+                <svg class="footer-social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                class="footer-social-link"
+                href="https://linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                lang="en"
+                aria-label="Instagram"
+              >
+                <svg class="footer-social-icon" width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-button">
+          <strong class="footer-email">Подпишитесь на рассылку</strong>
+          <form class="footer-form">
+            <label for="footer-email"></label>
+            <input
+              class="footer-email-input"
+              type="email"
+              name="newsletter"
+              id="footer-email"
+              placeholder="E-mail"
+            />
+            <button class="footer-email-button" type="submit">
+              Подписаться
+              <svg class="footer-email-icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
