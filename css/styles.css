@@ -1141,16 +1141,20 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
 
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 400;
-
-  color: var(--footer-link-color);
+  color: var(--secondary-text-color);
   background-color: var(--dark-background-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
   transition: border var(--transition-duration) var(--transition-timing-function);
+}
+
+.subscribe__label::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+
+  color: var(--footer-link-color);
 }
 
 .subscribe__input:focus,
