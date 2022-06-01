@@ -1138,6 +1138,10 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
 
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+
   color: var(--secondary-text-color);
   background-color: var(--dark-background-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1147,10 +1151,6 @@ textarea {
 }
 
 .subscribe__label::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 400;
-
   color: var(--footer-link-color);
 }
 
@@ -1160,7 +1160,7 @@ textarea {
   outline: 0;
 }
 
-.button--subscribe {
+.button--icon {
   display: flex;
   align-items: center;
   justify-content: center;
