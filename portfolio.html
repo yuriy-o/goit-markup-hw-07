@@ -22,34 +22,40 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
   </head>
   <body class="body">
-    <header class="header">
-      <div class="container">
+     <header class="header">
+      <div class="container header__container">
         <nav class="navigation">
-          <a class="logo" href="./index.html" lang="en" aria-label="Логотип сайта WebStudio"
-            >Web<span class="logo-black-color">Studio</span>
+          <a
+            class="logo navigation__logo"
+            href="./index.html"
+            lang="en"
+            aria-label="Логотип сайта WebStudio"
+            >Web<span class="logo logo--black">Studio</span>
           </a>
-          <ul class="list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="./index.html">Студия</a>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="./index.html">Студия</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link active-text-color" href="./portfolio.html">Портфолио</a>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--active" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="navigation-item"><a class="navigation-link" href="#">Контакты</a></li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <ul class="header-list list">
-          <li class="header-items">
-            <a class="header-contact" href="mailto:info@devstudio.com">
-              <svg class="header-icon" width="16" height="12">
+        <ul class="header__list">
+          <li class="header__items">
+            <a class="header__contact" href="mailto:info@devstudio.com">
+              <svg class="header__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="header-items">
-            <a class="header-contact" href="tel:+380961111111">
-              <svg class="header-icon" width="10" height="16">
+          <li class="header__items">
+            <a class="header__contact" href="tel:+380961111111">
+              <svg class="header__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -61,52 +67,56 @@
     <main>
       <section class="portfolio">
         <div class="container">
-          <h1 class="portfolio-title visually-hidden">Наши работы</h1>
-          <ul class="portfolio-filter list">
-            <li class="items">
-              <button class="portfolio-btn activ-btn" type="button">Все</button>
+          <h1 class="portfolio__title visually-hidden">Наши работы</h1>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <button class="filter__btn filter__btn--activ" type="button">Все</button>
             </li>
-            <li class="items"><button class="portfolio-btn" type="button">Веб-сайты</button></li>
-            <li class="items"><button class="portfolio-btn" type="button">Приложения</button></li>
-            <li class="items"><button class="portfolio-btn" type="button">Дизайн</button></li>
-            <li class="items"><button class="portfolio-btn" type="button">Маркетинг</button></li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Веб-сайты</button></li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Приложения</button></li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Дизайн</button></li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Маркетинг</button></li>
           </ul>
-          <ul class="portfolio-list list">
-            <li class="portfolio-item">
-              <a class="portfolio-link" href="#">
-                <div class="card-thumb">
-                  <img
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="#">
+                <div class="portfolio__card-thumb">
+                  <img class="portfolio__card-img"
                     src="./images/portfolio/photos-our-portfolio-1.jpg"
                     alt="Разработка веб-сайта Технокряк"
                     width="370"
                     height="294"
                   />
-                  <div class="card-thumb-overlay">
-                    <p class="card-thumb-paragraph">
+                  <div class="portfolio__card-overlay">
+                    <p class="portfolio__card-description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения о
                       компании или частном лице.
                     </p>
                   </div>
                 </div>
-                <div class="text">
-                  <h2 class="portfolio-second-title">Технокряк</h2>
-                  <p class="portfolio-text">Веб-сайт</p>
+                <div class="portfolio__text-container">
+                  <h2 class="portfolio__subtitle">Технокряк</h2>
+                  <p class="portfolio__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link" href="#">
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="#">
                 <div class="scene">
-                  <div class="card">
-                    <img
+                  <div class="scene__card">
+                    <img class="portfolio__card-img"
                       src="./images/portfolio/photos-our-portfolio-2.jpg"
                       alt="Разработка дизайна постера"
                       width="370"
                       height="294"
                     />
-                    <div class="card-face card-face-back">
-                      <p>
+                    <div class="scene__card-face scene__card-face--back">
+                      <p class="portfolio__card-description">
                         Не дивіться на Україну, як на землю своїх батьків. Дивіться на неї, як на
                         землю своїх дітей. І тоді прийдуть зміни…<br /><br />
                         Святослав Вакарчук
@@ -114,12 +124,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="text">
-                  <h2 class="portfolio-second-title">
+                <div class="portfolio__text-container">
+                  <h2 class="portfolio__subtitle">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
-                  <span class="portfolio-text-flag">
-                    <p class="portfolio-text flag">Дизайн</p>
+                  <span class="portfolio__flag">
+                    <p class="portfolio__text portfolio__text--flag">Дизайн</p>
                       <svg class="ukraine" width="32" height="16">
                         <use href="./images/icons.svg#Flag_of_Ukraine"></use>
                       </svg>
@@ -127,86 +137,86 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link" href="#">
-                <div class="card-thumb">
-                  <img
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="#">
+                <div class="portfolio__card-thumb">
+                  <img class="portfolio__card-img"
                     src="./images/portfolio/photos-our-portfolio-3.jpg"
                     alt="Создание приложения для ресторана Seafood"
                     width="370"
                     height="294"
                   />
-                  <div class="card-thumb-overlay">
-                    <p class="card-thumb-paragraph">
+                  <div class="portfolio__card-overlay">
+                    <p class="portfolio__card-description">
                       Не той українець, у кого батьки українці, а той, у кого діти українці.<br /><br />
                       Михайло Голтишов
                     </p>
                   </div>
                 </div>
-                <div class="text">
-                  <h2 class="portfolio-second-title">Ресторан <span lang="en">Seafood</span></h2>
-                  <p class="portfolio-text">Приложение</p>
+                <div class="portfolio__text-container">
+                  <h2 class="portfolio__subtitle">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="portfolio__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link" href="#">
-                <div class="card-thumb">
-                  <img
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="#">
+                <div class="portfolio__card-thumb">
+                  <img class="portfolio__card-img"
                     src="./images/portfolio/photos-our-portfolio-4.jpg"
                     alt="Маркетинг для проекта Prime"
                     width="370"
                     height="294"
                   />
-                  <div class="card-thumb-overlay">
-                    <p class="card-thumb-paragraph">
+                  <div class="portfolio__card-overlay">
+                    <p class="portfolio__card-description">
                       Оті дурні, що кричать "націоналіст!", не розуміють і ніколи не зрозуміють, що
                       я зумів об'єднати любов до мого народу з любов'ю до всіх народів світу!<br /><br />
                       Остап Вишня
                     </p>
                   </div>
                 </div>
-                <div class="text">
-                  <h2 class="portfolio-second-title">Проект <span lang="en">Prime</span></h2>
-                  <p class="portfolio-text">Маркетинг</p>
+                <div class="portfolio__text-container">
+                  <h2 class="portfolio__subtitle">Проект <span lang="en">Prime</span></h2>
+                  <p class="portfolio__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link" href="#">
-                <div class="card-thumb">
-                  <img
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="#">
+                <div class="portfolio__card-thumb">
+                  <img class="portfolio__card-img"
                     src="./images/portfolio/photos-our-portfolio-5.jpg"
                     alt="Разработка и запуск приложения Boxes"
                     width="370"
                     height="294"
                   />
-                  <div class="card-thumb-overlay">
-                    <p class="card-thumb-paragraph">
+                  <div class="portfolio__card-overlay">
+                    <p class="portfolio__card-description">
                       Ніхто нам не збудує держави, коли ми її самі не збудуємо, і ніхто з нас не
                       зробить нації, коли ми самі нацією не схочемо бути.<br /><br />
                       В. Липинський
                     </p>
                   </div>
                 </div>
-                <div class="text">
-                  <h2 class="portfolio-second-title">Проект <span lang="en">Boxes</span></h2>
-                  <p class="portfolio-text">Приложение</p>
+                <div class="portfolio__text-container">
+                  <h2 class="portfolio__subtitle">Проект <span lang="en">Boxes</span></h2>
+                  <p class="portfolio__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link" href="#">
-                <div class="card-thumb">
-                  <img
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="#">
+                <div class="portfolio__card-thumb">
+                  <img class="portfolio__card-img"
                     src="./images/portfolio/photos-our-portfolio-6.jpg"
                     alt="Проектировка сайта «Inspiration has no Borders»"
                     width="370"
                     height="294"
                   />
-                  <div class="card-thumb-overlay">
-                    <p class="card-thumb-paragraph">
-                        <pre class="card-thumb-pre">
+                  <div class="portfolio__card-overlay">
+                    <p class="portfolio__card-description">
+                        <pre class="portfolio__card-pre">
                          Для всіх ти мертва і смішна, 
                          Для всіх ти бідна і нещасна, 
                          Моя Україно прекрасна, 
@@ -216,77 +226,77 @@
                     </p>
                   </div>
                 </div>
-                <div class="text">
-                  <h2 class="portfolio-second-title" lang="en">Inspiration has no Borders</h2>
-                  <p class="portfolio-text">Веб-сайт</p>
+                <div class="portfolio__text-container">
+                  <h2 class="portfolio__subtitle" lang="en">Inspiration has no Borders</h2>
+                  <p class="portfolio__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link" href="#">
-                <div class="card-thumb">
-                  <img
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="#">
+                <div class="portfolio__card-thumb">
+                  <img class="portfolio__card-img"
                     src="./images/portfolio/photos-our-portfolio-7.jpg"
                     alt="Разработка дизайна Limited Edition"
                     width="370"
                     height="294"
                   />
-                  <div class="card-thumb-overlay">
-                    <p class="card-thumb-paragraph">
+                  <div class="portfolio__card-overlay">
+                    <p class="portfolio__card-description">
                       Бути українцем – це значить бути постійно в стані доказування свого права на існування.<br /><br />
                       В. Винниченко
                     </p>
                   </div>
                 </div>
-                <div class="text">
-                  <h2 class="portfolio-second-title">
+                <div class="portfolio__text-container">
+                  <h2 class="portfolio__subtitle">
                     Издание <span lang="en">Limited Edition</span>
                   </h2>
-                  <p class="portfolio-text">Дизайн</p>
+                  <p class="portfolio__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link" href="#">
-                <div class="card-thumb">
-                  <img
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="#">
+                <div class="portfolio__card-thumb">
+                  <img class="portfolio__card-img"
                     src="./images/portfolio/photos-our-portfolio-8.jpg"
                     alt="Маркетинг для проекта LAB"
                     width="370"
                     height="294"
                   />
-                  <div class="card-thumb-overlay">
-                    <p class="card-thumb-paragraph">
+                  <div class="portfolio__card-overlay">
+                    <p class="portfolio__card-description">
                       Ми мусимо навчитися чути себе українцями – не галицькими, не буковинськими українцями, а українцями без офіційних кордонів.<br /><br />
                       І. Франко
                     </p>
                   </div>
                 </div>
-                <div class="text">
-                  <h2 class="portfolio-second-title">Проект <span lang="en">LAB</span></h2>
-                  <p class="portfolio-text">Маркетинг</p>
+                <div class="portfolio__text-container">
+                  <h2 class="portfolio__subtitle">Проект <span lang="en">LAB</span></h2>
+                  <p class="portfolio__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link" href="#">
-                <div class="card-thumb">
-                  <img
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="#">
+                <div class="portfolio__card-thumb">
+                  <img class="portfolio__card-img"
                     src="./images/portfolio/photos-our-portfolio-9.jpg"
                     alt="Разработка и тестирование приложения Growing Business"
                     width="370"
                     height="294"
                   />
-                  <div class="card-thumb-overlay">
-                    <p class="card-thumb-paragraph">
+                  <div class="portfolio__card-overlay">
+                    <p class="portfolio__card-description">
                       «Біда України в тому, що нею керують ті, кому вона не потрібна».<br /><br />
                       Михайло Грушевський
                     </p>
                   </div>
                 </div>
-                <div class="text">
-                  <h2 class="portfolio-second-title" lang="en">Growing Business</h2>
-                  <p class="portfolio-text">Приложение</p>
+                <div class="portfolio__text-container">
+                  <h2 class="portfolio__subtitle" lang="en">Growing Business</h2>
+                  <p class="portfolio__text">Приложение</p>
                 </div>
               </a>
             </li>
@@ -294,108 +304,117 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-address-container">
-          <a class="logo" href="/index.html" lang="en" aria-label="Логотип сайта WebStudio"
-            >Web<span class="logo-white-color">Studio</span></a
+   <footer class="footer">
+      <div class="container footer__container">
+        <div class="address__container">
+          <a
+            class="logo footer__logo"
+            href="/index.html"
+            lang="en"
+            aria-label="Логотип сайта WebStudio"
+            >Web<span class="logo logo--white">Studio</span></a
           >
-          <address class="address-footer">
-            <ul class="list">
-              <li class="footer-item">
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">
                 <a
-                  class="footer-address"
+                  class="address__link address__link--white"
                   href="https://goo.gl/maps/qPdaPdiiLv6fJNoK8"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="footer-item">
-                <a class="footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="address__item">
+                <a class="address__link address__link--grey" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
-              <li class="footer-item">
-                <a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="address__item">
+                <a class="address__link address__link--grey" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-social-container">
-          <strong class="footer-social-caption">Присоединяйтесь</strong>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
+
+        <div class="social__container">
+          <strong class="social__caption">Присоединяйтесь</strong>
+          <ul class="social">
+            <li class="social__item">
               <a
-                class="footer-social-link"
+                class="social__link social__link--footer"
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 lang="en"
                 aria-label="Instagram"
               >
-                <svg class="footer-social-icon" width="20" height="20">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-
-            <li class="footer-social-item">
+            <li class="social__item">
               <a
-                class="footer-social-link"
+                class="social__link social__link--footer"
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 lang="en"
                 aria-label="Instagram"
               >
-                <svg class="footer-social-icon" width="20" height="20">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-item">
+            <li class="social__item">
               <a
-                class="footer-social-link"
+                class="social__link social__link--footer"
                 href="https://facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 lang="en"
                 aria-label="Instagram"
               >
-                <svg class="footer-social-icon" width="20" height="20">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-item">
+            <li class="social__item">
               <a
-                class="footer-social-link"
+                class="social__link social__link--footer"
                 href="https://linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 lang="en"
                 aria-label="Instagram"
               >
-                <svg class="footer-social-icon" width="20" height="20">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-button">
-          <strong class="footer-email">Подпишитесь на рассылку</strong>
-          <form class="footer-form">
-            <label for="footer-email"></label>
+
+        <div class="subscribe">
+          <strong class="subscribe__caption">Подпишитесь на рассылку</strong>
+          <form class="subscribe__form">
+            <label for="subscribe__label"></label>
             <input
-              class="footer-email-input"
+              class="subscribe__input"
               type="email"
               name="newsletter"
               id="footer-email"
               placeholder="E-mail"
             />
-            <button class="footer-email-button" type="submit">
+            <button class="button button--subscribe" type="submit">
               Подписаться
-              <svg class="footer-email-icon" width="24" height="24">
+              <svg class="subscribe__icon" width="24" height="24">
                 <use href="./images/icons.svg#send"></use>
               </svg>
             </button>

@@ -1,3 +1,11 @@
-@import "./header";
+@import "./utils/varieble";
+@import "./utils/body";
+@import "./utils/vh";
+@import "./base/normolise";
+
+@import "./components/container";
+@import "./components/section";
+
+@import "./components/header";
 
 
