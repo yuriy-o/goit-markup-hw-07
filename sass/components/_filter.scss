@@ -28,17 +28,17 @@
   transition: background-color var(--transition-duration) var(--transition-timing-function),
     color var(--transition-duration) var(--transition-timing-function),
     box-shadow var(--transition-duration) var(--transition-timing-function);
-}
 
-.filter__btn:hover,
-.filter__btn:focus {
-  background-color: var(--accent-color);
-  color: var(--secondary-text-color);
-  box-shadow: var(--button-shadow);
-}
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+    box-shadow: var(--button-shadow);
+  }
 
-.filter__btn--activ {
-  background-color: var(--accent-color);
-  color: var(--secondary-text-color);
-  box-shadow: var(--button-shadow);
+  &--activ {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+    box-shadow: var(--button-shadow);
+  }
 }

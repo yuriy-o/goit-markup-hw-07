@@ -10,10 +10,10 @@
   position: relative;
 
   margin-right: 30px;
-}
 
-.hobbies__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .hobbies__thumb {

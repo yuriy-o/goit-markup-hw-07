@@ -17,10 +17,10 @@
 .features__item {
   margin-right: 30px;
   width: 270px;
-}
 
-.features__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .features__icon-container {
@@ -37,15 +37,15 @@
   transition: background-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
-}
 
-.features__icon-container:hover {
-  background-color: var(--accent-color);
-}
+  &:hover {
+    background-color: var(--accent-color);
+  }
 
-.features__icon-container:hover .features__icon {
-  --color1: #ffffff;
-  --color2: #000000;
+  &:hover .features__icon {
+    --color1: #ffffff;
+    --color2: #000000;
+  }
 }
 
 .features__subtitle {

@@ -12,10 +12,10 @@
 
   box-shadow: var(--card-shadow);
   border-radius: 4px 4px 4px 4px;
-}
 
-.team__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .team__img {

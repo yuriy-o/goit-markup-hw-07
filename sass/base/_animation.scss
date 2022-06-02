@@ -14,11 +14,11 @@
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
-}
 
-.card__link:hover .scene__wrapper,
-.card__link:focus .scene__wrapper {
-  transform: rotateY(180deg);
+  .card__link:hover &,
+  .card__link:focus & {
+    transform: rotateY(180deg);
+  }
 }
 
 .scene__face {
@@ -32,16 +32,16 @@
 
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-}
 
-.scene__face--back {
-  position: absolute;
-  top: 0;
-  left: 0;
+  &--back {
+    position: absolute;
+    top: 0;
+    left: 0;
 
-  padding: 63px 24px;
+    padding: 63px 24px;
 
-  background-color: var(--background-color-overlay);
+    background-color: var(--background-color-overlay);
 
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
 }

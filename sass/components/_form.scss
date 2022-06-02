@@ -51,12 +51,12 @@
   cursor: pointer;
 
   transition: border var(--transition-duration) var(--transition-timing-function);
-}
 
-.form__input:focus,
-.form__input:hover {
-  border: 1px solid #2196f3;
-  outline: 0;
+  &:focus,
+  &:hover {
+    border: 1px solid #2196f3;
+    outline: 0;
+  }
 }
 
 .form__icon {
@@ -69,11 +69,11 @@
   pointer-events: none;
 
   transition: color var(--transition-duration) var(--transition-timing-function);
-}
 
-.form__input:focus + .form__icon,
-.form__input:hover + .form__icon {
-  color: var(--accent-color);
+  .form__input:focus + &,
+  .form__input:hover + & {
+    color: var(--accent-color);
+  }
 }
 
 .form__label-textarea {
@@ -92,21 +92,21 @@
   cursor: pointer;
 
   transition: border var(--transition-duration) var(--transition-timing-function);
-}
 
-.form__textarea:focus,
-.form__textarea:hover {
-  border: 1px solid #2196f3;
-  outline: 0;
-}
+  &:focus,
+  &:hover {
+    border: 1px solid #2196f3;
+    outline: 0;
+  }
 
-.form__textarea::placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
 
-  color: var(--placeholder-text-color);
+    color: var(--placeholder-text-color);
+  }
 }
 
 .form__terms-label {
@@ -125,15 +125,15 @@
   --color5: #ffffff;
 
   transition: fill var(--transition-duration) var(--transition-timing-function);
-}
 
-.form__terms-input:hover + .form__terms-icon,
-.form__terms-input:focus + .form__terms-icon {
-  fill: var(--color3, #2196f3);
-}
-.form__terms-input:checked + .form__terms-icon {
-  --color4: #2196f3;
-  --color5: #ffffff;
+  .form__terms-input:hover + &,
+  .form__terms-input:focus + & {
+    fill: var(--color3, #2196f3);
+  }
+  .form__terms-input:checked + & {
+    --color4: #2196f3;
+    --color5: #ffffff;
+  }
 }
 
 .form__terms-input {
