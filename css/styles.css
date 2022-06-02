@@ -287,7 +287,7 @@ textarea {
   text-transform: uppercase;
 }
 
-.hero__title {
+.main-title--hero {
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
@@ -759,7 +759,8 @@ textarea {
 
 .social__icon {
   fill: currentColor;
-} /* #endregion */
+}
+/* #endregion */
 /*#region section clients */
 
 .clients__list {
@@ -805,7 +806,7 @@ textarea {
   padding-bottom: 94px;
 }
 
-.portfolio__title {
+.main-title--portfolio {
   color: var(--title-color);
 }
 
