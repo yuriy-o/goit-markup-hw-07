@@ -562,7 +562,7 @@ textarea {
 
 /* #endregion */
 /*#region section features */
-.features__title {
+.title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
@@ -634,17 +634,6 @@ textarea {
   padding-bottom: 94px;
 }
 
-.hobbies__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  text-align: center;
-
-  margin-bottom: 50px;
-
-  color: var(--title-color);
-}
-
 .hobbies__list {
   display: flex;
 }
@@ -685,17 +674,6 @@ textarea {
 /*#region section team */
 .team__section {
   background-color: var(--secondary-background-color);
-}
-
-.team__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  text-align: center;
-
-  margin-bottom: 50px;
-
-  color: var(--title-color);
 }
 
 .team__list {
@@ -780,17 +758,6 @@ textarea {
   fill: currentColor;
 } /* #endregion */
 /*#region section clients */
-
-.clients__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  text-align: center;
-
-  margin-bottom: 50px;
-
-  color: var(--title-color);
-}
 
 .clients__list {
   display: flex;
