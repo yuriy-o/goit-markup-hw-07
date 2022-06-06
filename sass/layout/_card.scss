@@ -63,6 +63,10 @@
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .card__pre {

@@ -1012,6 +1012,10 @@ textarea {
   letter-spacing: 0.03em;
 }
 
+.card__description:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .card__pre {
   font-family: var(--main-font);
   font-size: 14px;
